@@ -1,0 +1,19 @@
+{
+  "name": "astro-client-side-routing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev"
+  },
+  "dependencies": {
+    "astro": "4.0.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.21.0"
+  },
+  "devDependencies": {
+    "@astrojs/cloudflare": "8.0.0",
+    "@astrojs/react": "3.0.8"
+  }
+}
