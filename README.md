@@ -51,5 +51,6 @@ For production, different hosting providers will have different ways to set up r
 JS assets for `/app` can simply be preloaded with `import`.
 
 ```js
+// see src/pages/index.astro
 import("../src/app");
 ```
