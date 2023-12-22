@@ -1,23 +1,15 @@
-import cloudflare from "@astrojs/cloudflare";
 import react from "@astrojs/react";
-import { defineConfig, passthroughImageService } from "astro/config";
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  adapter: cloudflare({
-    mode: `directory`,
-    runtime: {
-      mode: `local`,
-      type: `pages`,
-    },
-  }),
-  image: {
-    service: passthroughImageService(),
+  build: {
+    format: "file",
   },
   integrations: [react()],
-  output: `hybrid`,
   prefetch: {
     prefetchAll: true,
   },
+  trailingSlash: `never`,
   vite: {
     plugins: [
       {
