@@ -15,7 +15,7 @@ import { App } from '../app'
 
 ## Set up rewrite/proxying
 
-All paths starting with `/app/` (e.g. `/app/login`, `/app/settings`) need to be redirected to `/app`
+All paths starting with `/app/` (e.g. `/app/login`, `/app/settings`) need to be redirected to `/app`.
 
 For development server, set up Vite plugin like so:
 
